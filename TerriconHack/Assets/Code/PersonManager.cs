@@ -91,7 +91,7 @@ public class PersonManager : MonoBehaviour
             NewDossier();
         }));
     }
-
+    
     public void StartGame()
     {
         startMenu.transform.DOMoveX(4000, 3f).OnComplete(() => startMenu.SetActive(false));

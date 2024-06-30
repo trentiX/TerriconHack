@@ -64,8 +64,8 @@ public class Note : MonoBehaviour
         { "First", new KeyValuePair<string, int>[]
             {
                 new KeyValuePair<string, int>("Ученик часто отвлекает класс во время уроков.", 100),
-                new KeyValuePair<string, int>("Проявляет агрессию по отношению к одноклассникам.", 200),
-                new KeyValuePair<string, int>("Игнорирует замечания учителя и нарушает дисциплину.", 150),
+                new KeyValuePair<string, int>("Проявляет агрессию по отношению к одноклассникам.", 100),
+                new KeyValuePair<string, int>("Игнорирует замечания учителя и нарушает дисциплину.", 100),
                 new KeyValuePair<string, int>("Разговаривает без разрешения.", 50),
                 new KeyValuePair<string, int>("Использует грубую лексику.", 75),
                 new KeyValuePair<string, int>("Отказывается выполнять задания.", 80),
@@ -75,42 +75,95 @@ public class Note : MonoBehaviour
                 new KeyValuePair<string, int>("Не проявляет уважения к учителям.", 100),
                 new KeyValuePair<string, int>("Повреждает школьное имущество.", 120),
                 new KeyValuePair<string, int>("Постоянно опаздывает на уроки.", 110),
-                new KeyValuePair<string, int>("Обычный спокойный ученик.", 20),
-                new KeyValuePair<string, int>("Добрый волонтер.", 5),
-                new KeyValuePair<string, int>("Тихоня класса.", 10),
-                new KeyValuePair<string, int>("Спортсмен школы.", 5),
-                new KeyValuePair<string, int>("Помогает учителям с заданиями", 1),
-                new KeyValuePair<string, int>("Постоянно сидит на дополнительных занятиях", 1),
-                new KeyValuePair<string, int>("Проводит внутришкольные мероприятия", 1),
-                new KeyValuePair<string, int>("Делает все задания в классе", 1),
-                new KeyValuePair<string, int>("Никогда не отвлекает одноклассников", 1),
-                new KeyValuePair<string, int>("Совсем не агресивный", 1),
+                new KeyValuePair<string, int>("Обычный спокойный ученик.", 0),
+                new KeyValuePair<string, int>("Добрый волонтер.", -30),
+                new KeyValuePair<string, int>("Тихоня класса.", -10),
+                new KeyValuePair<string, int>("Спортсмен школы.", -30),
+                new KeyValuePair<string, int>("Помогает учителям с заданиями", -50),
+                new KeyValuePair<string, int>("Постоянно сидит на дополнительных занятиях", -50),
+                new KeyValuePair<string, int>("Проводит внутришкольные мероприятия", -100),
+                new KeyValuePair<string, int>("Делает все задания в классе", -40),
+                new KeyValuePair<string, int>("Никогда не отвлекает одноклассников", -50),
+                new KeyValuePair<string, int>("Совсем не агресивный", -30),
             }
         },
         { "Second", new KeyValuePair<string, int>[]
             {
-                new KeyValuePair<string, int>("пришел/пришла без рюкзака сегодня", 20),
+                new KeyValuePair<string, int>("пришел/ла без рюкзака сегодня", 40),
                 new KeyValuePair<string, int>("сегодня подрался/подралась", 200),
                 new KeyValuePair<string, int>("бросил/бросила пенал в одноклассника", 100),
                 new KeyValuePair<string, int>("ушел/ушла с уроков гораздо раньше", 80),
                 new KeyValuePair<string, int>("парил/парила в туалете", 90),
                 new KeyValuePair<string, int>("наорал/а матом на уборщицу", 130),
                 new KeyValuePair<string, int>("задержал/а всех после звонка", 80),
-                new KeyValuePair<string, int>("смешал/а химикаты в лаборатории", 180),
+                new KeyValuePair<string, int>("смешал/а опасные химикаты в лаборатории", 180),
                 new KeyValuePair<string, int>("продал/а чужой учебник", 120),
-                new KeyValuePair<string, int>("включил/а сирену во время урока", 160),
+                new KeyValuePair<string, int>("включил/а сирену во время урока", 250),
                 new KeyValuePair<string, int>("написал/а анонимку учителю", 110),
                 new KeyValuePair<string, int>("пришел/пришла в форме другой школы", 140),
+                new KeyValuePair<string, int>("разрисовал/а стены в классе", 120),
+                new KeyValuePair<string, int>("сорвал/а контрольную работу", 110),
+                new KeyValuePair<string, int>("подменил/а результаты теста", 180),
+                new KeyValuePair<string, int>("принес/принесла домашнего питомца в школу", 80),
+                new KeyValuePair<string, int>("прогулял/а школьное собрание", 90),
+                new KeyValuePair<string, int>("списывал/а у соседа на контрольной", 120),
+                new KeyValuePair<string, int>("использовал/а телефон на уроке", 70),
+                new KeyValuePair<string, int>("разговаривал/а на уроке громким голосом", 100),
+                new KeyValuePair<string, int>("съел/а чужой обед", 120),
+                new KeyValuePair<string, int>("потерял/а школьные принадлежности", 50),
+                new KeyValuePair<string, int>("оставил/а мусор в классе", 80),
             }
         },
         { "Third", new KeyValuePair<string, int>[]
             {
-
+                new KeyValuePair<string, int>("действие было совершено неоднократно", 80),
+                new KeyValuePair<string, int>("игнорировал/а предупреждения", 40),
+                new KeyValuePair<string, int>("вовлек других учеников", 70),
+                new KeyValuePair<string, int>("планировал/а заранее", 30),
+                new KeyValuePair<string, int>("скрывал/а последствия", 40),
+                new KeyValuePair<string, int>("действовал/а с намерением навредить", 80),
+                new KeyValuePair<string, int>("не собирается извинятся", 50),
+                
+                new KeyValuePair<string, int>("впервые совершил/а подобное действие", -60),
+                new KeyValuePair<string, int>("публично извинился/лась", -50),
+                new KeyValuePair<string, int>("содействовал/а расследованию", -30),
+                new KeyValuePair<string, int>("действовал/а под давлением сверстников", -40),
+                new KeyValuePair<string, int>("осознал/а вину и готов/а исправиться", -40),
+                new KeyValuePair<string, int>("пытался/лась исправить ущерб", -50),
+                new KeyValuePair<string, int>("обстоятельства в семье повлияли на поведение", -70),
+                new KeyValuePair<string, int>("его подставили", -100),
             }
         },
         { "Fourth", new KeyValuePair<string, int>[]
             {
-                
+                new KeyValuePair<string, int>("директор, я понимаю серьезность своих действий", -20),
+                new KeyValuePair<string, int>("директор, я готов(а) отработать свою ошибку", -30),
+                new KeyValuePair<string, int>("директор, прошу прощения за созданные неудобства", -20),
+                new KeyValuePair<string, int>("директор, я готов(а) принять любые последствия", -10),
+                new KeyValuePair<string, int>("директор, обещаю больше не повторять такого", -15),
+                new KeyValuePair<string, int>("директор, мои действия были необдуманными", -15),
+                new KeyValuePair<string, int>("директор, прошу учесть обстоятельства", -10),
+                new KeyValuePair<string, int>("директор, искренне сожалею о своих поступках", -20),
+                new KeyValuePair<string, int>("директор, глубоко раскаиваюсь в своих действиях", -20),
+                new KeyValuePair<string, int>("директор, примите мои искренние извинения", -25),
+                new KeyValuePair<string, int>("директор, понимаю, что ошибся(ась) и готов(а) исправиться", -35),
+                new KeyValuePair<string, int>("директор, сожалею о своем неправильном поведении", -30),
+                new KeyValuePair<string, int>("директор, хочу извиниться за свои действия и обещаю их не повторять", -20),
+
+                new KeyValuePair<string, int>("директор, я не считаю свои действия ошибкой", 70),
+                new KeyValuePair<string, int>("директор, я не понимаю, за что мне предъявляют обвинения", 80),
+                new KeyValuePair<string, int>("директор, я не собираюсь извиняться за свои поступки", 75),
+                new KeyValuePair<string, int>("директор, я считаю, что мои действия были оправданы", 85),
+                new KeyValuePair<string, int>("директор, я готов(а) защищать свою позицию", 60),
+                new KeyValuePair<string, int>("директор, я считаю, что школьные правила не относятся ко мне", 90),
+                new KeyValuePair<string, int>("директор, я не собираюсь признавать свою вину", 80),
+                new KeyValuePair<string, int>("директор, считаю, что правила школы не распространяются на меня", 90),
+                new KeyValuePair<string, int>("директор, мои действия были полностью оправданы", 85),
+                new KeyValuePair<string, int>("директор, не вижу ничего плохого в том, что я сделал(а)", 75),
+                new KeyValuePair<string, int>("директор, я не считаю свои действия ошибкой", 70),
+                new KeyValuePair<string, int>("директор, я считаю, что мои действия были необходимы", 60),
+                new KeyValuePair<string, int>("директор, я не собираюсь извиняться, это было необходимо", 65),
+
             }
         }
     };
@@ -163,7 +216,7 @@ public class Note : MonoBehaviour
     
     private void CheckIfCorrect()
     {
-        if (GetScore() > 400)
+        if (GetScore() > 210)
         {
             guilty = true;
         }
